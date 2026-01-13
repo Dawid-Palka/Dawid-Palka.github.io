@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Podłączenie pliku CSS do stylizacji strony -->
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body class="home">
+    <!-- Górny pasek nawigacyjny -->
+    <nav class="bar-style top-bar">
+        <!-- Link do strony głównej -->
+        <a href="index.html">Strona główna</a>
+        <!-- Link do strony z biografią -->
+        <a href="biografia.html">Biografia</a>
+        <!-- Link do strony z koncertami -->
+        <a href="koncerty.html">Koncerty</a>
+        <!-- Link do strony z playlistami -->
+        <a href="utwory.html">Playlisty</a>
+        <!-- Link do strony z formularzem -->
+        <a href="formularz.html">Kontakt</a>
+        
+    </nav>
+
+    
+
+<div class="social-title">𝕙𝕒𝕚</div>
+    <!-- Pionowy zestaw przycisków graficznych -->
+    <div class="right-buttons">
+        <!-- Link do profilu na Spotify, obrazek jako przycisk -->
+        <a href="https://open.spotify.com/artist/4kmEGD7LxC1E58zwE1Rolg?si=2tqa93M1TP6rb1V6uSTgvQ"><img src="spot.png" alt="Przycisk 1"></a>
+        <!-- Link do profilu na Instagramie, obrazek jako przycisk -->
+        <a href="https://www.instagram.com/haimuzyki/"><img src="inst.png" alt="Przycisk 2"></a>
+        <!-- Link do profilu na Facebooku, obrazek jako przycisk -->
+        <a href="https://www.facebook.com/haimuzyki"><img src="facb.png" alt="Przycisk 3"></a>
+        <!-- Link do kanału na YouTube, obrazek jako przycisk -->
+        <a href="https://www.youtube.com/@haimuzyki"><img src="yt.png" alt="Przycisk 4"></a>
+        <!-- Każdy <a> otacza obrazek <img>, co sprawia, że obrazek działa jak przycisk/link -->
+        <!-- Atrybut 'alt' zapewnia alternatywny tekst, który pojawia się, gdy obrazek nie może być wyświetlony -->
+    </div>
+
+       <script src="script.js"></script>
+
+     <footer class="bar-style footer">
+        Emilia Zaprawa, Dawid Pałka
+    </footer>
+
+
+
+<!-- Ikonka hamburgera -->
+<div class="hamburger" onclick="toggleMenu()">
+    &#9776;
+</div>
+
+<!-- Wysuwane menu boczne -->
+<nav class="side-menu" id="sideMenu">
+    <a href="index.html">Strona główna</a>
+    <a href="biografia.html">Biografia</a>
+    <a href="koncerty.html">Koncerty</a>
+    <a href="formularz.html">Formularz</a>
+    <a href="utwory.html">Utwory</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,719 @@
+/* Stylowanie ciała strony */
+body {
+    margin: 0; /* Usunięcie domyślnych marginesów */
+    padding: 0; /* Usunięcie domyślnego paddingu */
+    background-image: url('test21.png'); /* Ścieżka do obrazka tła */
+    background-size: cover; /* Dopasowanie obrazka do rozmiaru ekranu */
+    /* aby stopka byla na dole */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bar-style{
+    display: flex;
+    align-items: center;
+    background-color: rgba(159, 141, 127); /* Przezroczysty zielony kolor menu stron*/
+    padding: 10px;
+    max-width: 1200px; /* Ustawienie maksymalnej szerokości */
+    margin: 10px auto; /* Wyśrodkowanie paska na środku ekranu */
+    border-radius: 40px;
+}
+
+.footer {
+    justify-content: center;      /* wyrównanie zawartości na środku */
+    width: fit-content;           /* szerokość dopasowuje się do treści */
+    font-family: 'Gill Sans MT';
+    font-size: 14px;
+    color: white;
+    margin-top: auto;             /* przesuwa stopkę na dół strony */
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(159, 141, 127);
+}
+
+
+
+
+/* Stylowanie górnego paska nawigacyjnego */
+.top-bar {
+    justify-content: space-around;
+    position: sticky; /* ZMIEŃ NA STICKY */
+    top: 0; /* KLUCZOWE: Przyklej do samej góry */
+    /* Usuwamy wszystkie właściwości pozycjonujące top-bar na środku, bo sticky jest w normalnym przepływie */
+    /* top: 0; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 100%; /* Będzie działać lepiej ze sticky na całym body */
+    z-index: 1000;
+}
+
+.top-bar a {
+    color: white; /* Kolor tekstu przycisków */
+    text-decoration: none; /* Brak podkreślenia tekstu */
+    font-family: 'Gill Sans MT'; /* Styl czcionki dla przycisków */
+    padding: 10px 20px; /* Padding wewnątrz przycisków */
+    border-radius: 100px; /* Duże zaokrąglenie krawędzi przycisków */
+}
+
+.top-bar a:hover {
+    background-color: rgba(126,95,76,0.3); /* Zmiana koloru tła przycisku przy najechaniu */
+}
+
+
+
+/* Stylowanie napisu "Sociale" */
+.social-title {
+    position: fixed; /* Przyklejenie napisu w jednej pozycji na ekranie */
+    top: 20%; /* Ustawienie pozycji w pobliżu przycisków graficznych */
+    right: 14px; /* Odstęp od prawej krawędzi */
+    font-size: 19px; /* Rozmiar czcionki */
+    color: white; /* Kolor tekstu */
+    font-family: 'Arial', sans-serif; /* Czcionka dla tekstu */
+    padding: 5px; /* Padding wokół tekstu */
+    z-index: 999; /* Umieszczenie nad większością elementów */
+}
+
+/* Stylowanie pionowego zestawu przycisków graficznych */
+.right-buttons {
+    position: fixed; /* Przyklejenie przycisków w jednej pozycji na ekranie */
+    top: 25%; /* Ustawienie pozycji w pionie */
+    right: 10px; /* Odstęp od prawej krawędzi */
+    display: flex; /* Użycie flexbox do rozmieszczenia przycisków */
+    flex-direction: column; /* Ułożenie przycisków w kolumnie */
+    gap: 20px; /* Odstęp między przyciskami */
+}
+
+.right-buttons a img {
+    width: 50px; /* Szerokość obrazków przycisków */
+    height: 50px; /* Wysokość obrazków przycisków */
+}
+
+.right-buttons a img:hover {
+    transform: scale(1.1); /* Powiększenie obrazka przy najechaniu */
+}
+
+
+
+
+
+
+/* BIOGRAFIA */
+
+/* Stylowanie ciała strony dla strony biografii */
+body.biografia {
+    background-image: url('bib.jpg') /* Ustawienie czarnego tła dla strony biografii */
+}
+
+
+/* Stylowanie obszaru z napisem "Życiorys" i polem na życiorys */
+.biografia-container {
+    text-align: center; /* Wyśrodkowanie zawartości tekstowej */
+    margin: 20px auto; /* Odstęp 100px od góry oraz automatyczne centrowanie po bokach (auto) */
+    padding: 10px; /* Wewnętrzny odstęp 10px wokół zawartości */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px; /* Maksymalna szerokość obszaru biografii to 800px */
+    background-color: rgba(0, 0, 0, 0.45); /* Przezroczyste zielone tło */
+    border-radius: 20px; /* Zaokrąglenie krawędzi */
+    font-family: 'Gill Sans MT';
+}
+
+/* Stylowanie nagłówka h1 w obszarze biografii */
+.biografia-container h1 {
+    color: white; /* Ustawienie białego koloru dla tekstu nagłówka */
+    font-size: 32px; /* Rozmiar czcionki */
+}
+
+/* Stylowanie zawartości treści biografii */
+.biografia-content {
+    color: white; /* Ustawienie białego koloru dla tekstu treści biografii */
+    font-size: 19px; /* Rozmiar czcionki */
+    line-height: 1.6; /* Wysokość wiersza ustawiona na 1.6 dla lepszej czytelności */
+    margin-top: 10px; /* Dodanie 20px odstępu między nagłówkiem a treścią biografii */
+    
+}
+
+/* Szeroki box dla członków zespołu */
+.members-box {
+    width: 100%;
+    padding: 20px;
+}
+
+.members-box p {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+/* KONCERTY */
+
+/* Stylizacja dla klasy koncerty */
+body.koncerty {
+    background: rgb(20, 13, 0); /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    font-family: Arial, sans-serif; /* Ustawienie czcionki */
+    margin: 0; /* Usunięcie marginesu */
+    padding: 0; /* Usunięcie wewnętrznego wypełnienia */
+}
+
+/* Kontener dla obrazu */
+.image-container {
+    text-align: center; /* Wyśrodkowanie obrazu */
+    margin: 15px 0; /* Marginesy nad i pod obrazem */
+}
+
+.full-width-image {
+    width: 97%; /* Obrazek zajmuje pełną szerokość kontenera */
+    height: auto; /* Automatyczne dostosowanie wysokości */
+    max-height: 80vh; /* Maksymalna wysokość obrazka. Wartość 80vh oznacza to, że wysokość obrazka nie będzie większa niż 80% wysokości okna przeglądarki */
+    object-fit: cover;  /* Dopasowanie obrazka */
+}
+
+/* Stylizacja kontenera mapy Google */
+.map-container {
+    margin-top: 20px; /* Margines górny */
+    display: flex; /* Użycie flexbox do rozmieszczenia elementów */
+    justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
+}
+
+/* Stylizacja przycisków */
+.button-container {
+    display: flex; /* Ustawienie modelu flexbox dla kontenera przycisków */
+    flex-wrap: wrap; /* Umieszczanie przycisków w nowych wierszach po przekroczeniu szerokości kontenera */
+    justify-content: center; /* Wyśrodkowanie przycisków wzdłuż osi poziomej */
+}
+
+.button-container button {
+    background-color: rgb(182,165,150); /* Zielony kolor tła przycisków */
+    color: white; /* Biały kolor tekstu */
+    border: none; /* Usunięcie obramowania przycisków */
+    padding: 10px 20px; /* Wewnętrzne wypełnienie przycisków */
+    margin: 10px 10px 10px 0; /* Dodanie marginesu na prawo i na dole każdego przycisku */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    border-radius: 5px; /* Zaokrąglenie krawędzi przycisków */
+    font-size: 16px; /* Rozmiar czcionki */
+}
+
+.button-container button:hover {
+    background-color: rgb(126,95,76,0.3); /* Zmiana koloru tła przycisku przy najechaniu */
+}
+
+
+
+
+
+/* FORMULARZ */
+ 
+ 
+/* Tło całej strony */
+body.formularz {
+    background-image: url('form.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Gill Sans MT';
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+}
+ 
+/* Kontener formularza */
+form{
+    width: 40%;
+    max-width: 480px;
+    padding: 20px 30px;
+    margin-left: 8%;
+    margin-top: 10px;
+ 
+ 
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+ 
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+ 
+.form-title{
+    width: 40%;
+    max-width: 480px;
+    padding: 5px 30px;
+    margin-left: 8%;
+    margin-top: 20px;
+ 
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+ 
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+   
+}
+ 
+/* Ogólne style pól formularza */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ 
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    background: rgba(211, 209, 207, 0.85);
+    color: #000;
+ 
+    font-size: 15px;
+    transition: all 0.25s ease;
+}
+ 
+/* Efekt fokus – profesjonalny */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+ 
+/* Etykiety */
+form label {
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+}
+ 
+/* Radio & checkbox osobno */
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    margin-bottom: 0;
+}
+ 
+/* Przyciski */
+form input[type="submit"] {
+    background-color: rgb(182,165,150);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+ 
+form input[type="submit"]:hover {
+    background-color: rgb(126,95,76,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+/* UTWORY */
+
+/* Dodatkowe style CSS dla strony utworów */
+body.utwory {
+    background-image: url('test2.jpg');
+    display: flex; /* Używanie flexbox do układania elementów */
+    justify-content: center; /* Wyśrodkowanie zawartości względem osi poziomej */
+    align-items: center; /* Wyśrodkowanie zawartości względem osi pionowej */
+    height: 100vh; /* Wysokość równa 100% wysokości widoku */
+    margin: 0; /* Brak marginesów */
+}
+
+/* Stylizacja kontenera playlist Spotify */
+.spotify-playlists {
+    display: flex; /* Używanie flexbox do układania elementów */
+    justify-content: space-between; /* Rozłożenie elementów równomiernie na całej szerokości kontenera */
+    align-items: flex-start; /* Wyśrodkowanie zawartości względem osi pionowej */
+    width: 80%; /* Szerokość kontenera 80% szerokości rodzica */
+    margin: 0;
+}
+
+/* Stylizacja osadzonych odtwarzaczy Spotify */
+.spotify-playlists iframe.playlist {
+    margin: 20px; /* Margines wokół osadzonych odtwarzaczy */
+    border-radius: 20px; /* Zaokrąglenie rogów osadzonych odtwarzaczy */
+}
+
+
+/* Styl dla tabeli w biografii */
+.tabela {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Gill Sans MT';
+    color: white;
+}
+
+/* Komórki i nagłówki */
+.tabela th,
+.tabela td {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Nagłówek tabeli */
+.tabela th {
+    background-color: rgba(0, 0, 0, 0.55);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+/* Hover na wierszu */
+.tabela tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Ostatni wiersz bez obramowania */
+.tabela tr:last-child td {
+    border-bottom: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ikona menu (hamburger) */
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 34px;
+    color: white;
+    z-index: 2000;
+    cursor: pointer;
+    background: rgba(0,0,0,0.4);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+/* Wysuwane menu boczne */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -260px; /* ukryte */
+    width: 240px;
+    height: 100%;
+    background: rgba(159, 141, 127, 0.4);
+    backdrop-filter: blur(6px);
+    padding-top: 80px;
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.4s ease;
+    z-index: 1999;
+}
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Gill Sans MT';
+}
+
+.side-menu a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Menu aktywne */
+.side-menu.active {
+    left: 0;
+}
+
+/* Menu aktywne przesuwa ikonkę */
+.hamburger.active {
+    left: 260px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    body{
+        background-position: 50% 30%;
+    }
+
+    /* --- NAWIGACJA --- */
+    .top-bar {
+        display: none;
+    }
+
+    .hamburger {
+        font-size: 22px !important;
+        padding: 6px 10px !important;
+    }
+
+    /* --- BRANDING --- */
+    .branding {
+        font-size: 38px;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    /* --- SOCIALE (HOME ONLY) --- */
+    .social-title,
+    .right-buttons {
+        display: none; /* domyślnie ukryte */
+    }
+
+    body.home .social-title{
+        display: none;
+    }
+    body.home .right-buttons {
+        display: flex; /* tylko na stronie głównej */
+    }
+
+    body.home .right-buttons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* --- FORM --- */
+    form,
+    .form-title {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    
+
+    /* --- BIOGRAFIA --- */
+    .biografia-content {
+        font-size: 16px;
+    }
+
+    .biografia-container {
+        max-width: 90%;  /* mniejsze pudełko */
+        padding: 15px;   /* mniejszy padding */
+        margin: 20px auto;
+    }
+
+    /* --- TABELA --- */
+    .tabela {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    .spotify-playlists {
+        flex-direction: column; /* jedna pod drugą */
+        width: 95%;
+        gap: 15px;
+        margin: 0 auto;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .spotify-playlists iframe.playlist {
+        width: 100%; /* wszystkie takie same */
+        height: 380px;
+        margin: 0;
+        vertical-align: top;
+    }
+
+
+    .map-container iframe{
+        width: 95%;   
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-bar a {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .branding {
+        font-size: 48px;
+        top: 15%;
+    }
+
+    .right-buttons img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .spotify-playlists {
+        flex-direction: column;
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    body{
+        background-position: 55% 30%;
+    }
+
+    /* ---------- HAMBURGER ---------- */
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        font-size: 28px;
+        color: white;
+        z-index: 3000;
+        cursor: pointer;
+        background: rgba(0,0,0,0.45);
+        padding: 8px 14px;
+        border-radius: 10px;
+    }
+
+    /* ---------- TOP BAR ---------- */
+    .top-bar {
+        display: none; /* chowamy stare menu na tabletach */
+    }
+
+    /* ---------- SIDE MENU ---------- */
+    .side-menu {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: -260px; /* ukryte domyślnie */
+        width: 240px;
+        height: 100%;
+        background: rgba(159, 141, 127, 0.45);
+        backdrop-filter: blur(8px);
+        flex-direction: column;
+        padding-top: 90px;
+        gap: 22px;
+        transition: 0.35s ease;
+        z-index: 2500;
+    }
+
+    .side-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 24px;
+        font-family: 'Gill Sans MT';
+    }
+
+    .side-menu a:hover {
+        background: rgba(255,255,255,0.15);
+        border-radius: 8px;
+    }
+
+    /* AKTYWNE MENU */
+    .side-menu.active {
+        left: 0;
+    }
+
+    .hamburger.active {
+        left: 260px;
+    }
+
+    /* ---------- SOCIALE (HOME ONLY) ---------- */
+    .social-title,
+    .right-buttons {
+        display: none; /* domyślnie ukryte */
+    }
+
+    body.home .social-title{
+        display: none;
+    }
+    body.home .right-buttons {
+        display: flex; /* tylko na stronie głównej */
+    }
+
+    /* ---------- BRANDING ---------- */
+    .branding {
+        font-size: 64px;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    /* ---------- FORMULARZ ---------- */
+    form,
+    .form-title {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .spotify-playlists {
+        flex-direction: column; /* ustawiamy pod sobą */
+        width: 70%;
+        gap: 25px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0;
+    }
+
+    .spotify-playlists iframe.playlist {
+        width: 100%; /* szersze playlisty */
+        max-width: 700px;
+        height: 420px;
+        margin: 0 auto; /* wyśrodkowanie */
+        vertical-align: top;
+    }
+
+    .biografia-container {
+        max-width: 80%;  
+        padding: 18px;
+        margin: 25px auto;
+}
+
+    body.utwory {
+        display: block; /* zamiast flex */
+        height: auto;   /* żeby body dopasowało się do zawartości */
+        padding: 20px 0; /* odrobina odstępu od góry i dołu */
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .top-bar a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .branding {
+        font-size: 80px;
+        top: 25%;
+    }
+
+    .right-buttons img {
+        width: 42px;
+        height: 42px;
+    }
+}
